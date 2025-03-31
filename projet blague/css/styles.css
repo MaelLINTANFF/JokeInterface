@@ -1,9 +1,75 @@
-.btn {
-    background-color: #d72929;
-    color:white;
-    border-radius: 5px;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    background-size: 600% 100%;
+    animation: moveBackground 5s ease-in-out infinite;
 }
 
-.btn:hover {
-    background-color: #ab0000;
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+#blague {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #9333ea, #3b82f6);
+    transform: scale(1.1);
 }

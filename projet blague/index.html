@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citations et Blagues Aléatoires</title>
+    <title>Générateur de Blagues</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-    <div class="contenu">
-        <h1>Citations et Blagues Aléatoires</h1>
-        <div class="blague-box">
-            <p id="blague">Cliquez sur le bouton pour obtenir une citation ou une blague !</p>
-        </div>
-        <button class="btn">Nouvelle citation/blague</button>
-        <div class="social-share">
-            <a href="#" id="partager-twitter">Partager sur Twitter</a>
-        </div>
+    <div class="container">
+        <h1>Générateur de Blagues</h1>
+        <p id="blague">Clique sur le bouton pour une blague !</p>
+        <button onclick="FonctionBlague()">Nouvelle blague</button>
     </div>
     <script src="./js/script.js"></script>
 </body>
