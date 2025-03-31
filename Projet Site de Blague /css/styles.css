@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    background-size: 600% 100%;
+    animation: FondQuiBouge 5s ease-in-out infinite;
+}
+
+/* Animation pour faire bouger le fond de gauche à droite */
+@keyframes FondQuiBouge {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.conteneur {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Barre sous le titre */
+.separateur {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+#blague {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    min-height: 100px; /* Garde de l'espace pour que l'interface ne bouge pas */
+    display: flex;
+    align-items: center; /* Centre le texte verticalement */
+    justify-content: center; 
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+/* Effet d'animation du bouton quand on passe par dessus */
+button:hover {
+    background: linear-gradient(to right, #9333ea, #3b82f6);
+    transform: scale(1.1);
+}
